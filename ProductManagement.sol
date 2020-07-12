@@ -12,7 +12,7 @@ contract ProductManagement {
     }
     
      struct Product {
-        bytes32 typeOfParts; // type of parts
+        bytes32 typeOfProducts; // type of products
         bytes32 fac_name; //  factory name
         uint256 fac_id; // factory id 
         uint256 manufacture_date; // manufacture date of this part 
@@ -46,7 +46,7 @@ contract ProductManagement {
         
     }
     
-    function registerProducts(bytes32 _typeOfParts, bytes32 _fac_name, uint256 _fac_id, uint256 _manufacture_date, uint256 _serialNo, uint256 _wheels_serialNo, uint256 _body_parts_serialNo, uint256 _engines_serialNo, uint256 _transmissions_serialNo, address _owner) public {
+    function registerProducts(bytes32 _typeOfProducts, bytes32 _fac_name, uint256 _fac_id, uint256 _manufacture_date, uint256 _serialNo, uint256 _wheels_serialNo, uint256 _body_parts_serialNo, uint256 _engines_serialNo, uint256 _transmissions_serialNo, address _owner) public {
       
         require(parts[_wheels_serialNo].owner == msg.sender);  
         require(parts[_body_parts_serialNo].owner == msg.sender);
@@ -55,7 +55,7 @@ contract ProductManagement {
       
         Product storage product = products[_serialNo];
       
-                product.typeOfParts = _typeOfParts;
+                product.typeOfProducts = _typeOfProducts;
                 product.fac_name = _fac_name;
                 product.fac_id =_fac_id;
                 product.manufacture_date = _manufacture_date;
@@ -89,7 +89,7 @@ contract ProductManagement {
     
     function getProduct(uint256 _serialNo) view public returns (bytes32 , bytes32 , uint256 , uint256 , uint256, uint256, uint256, uint256, uint256, address) {
         Product memory p = products[_serialNo];
-        return (p.typeOfParts, p.fac_name, p.fac_id, p.manufacture_date, p.serialNo, p.wheels_serialNo, p.body_parts_serialNo, p.engines_serialNo, p.transmissions_serialNo, p.owner);
+        return (p.typeOfProducts, p.fac_name, p.fac_id, p.manufacture_date, p.serialNo, p.wheels_serialNo, p.body_parts_serialNo, p.engines_serialNo, p.transmissions_serialNo, p.owner);
     }
     
     function countProducts() view public returns (uint) {
@@ -97,12 +97,14 @@ contract ProductManagement {
     }
     
     function changeOwnershipParts(uint256 _serialNo, address _new_owner)  public{
+        require(_new_owner != msg.sender);
         require(parts[_serialNo].owner == msg.sender);
         
         parts[_serialNo].owner = _new_owner;      
     }
     
     function changeOwnershipProducts(uint256 _serialNo, address _new_owner)  public{
+        require(_new_owner != msg.sender);
         require(products[_serialNo].owner == msg.sender);
         
         products[_serialNo].owner = _new_owner;      
