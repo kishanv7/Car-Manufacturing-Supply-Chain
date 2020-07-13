@@ -3,9 +3,16 @@ a simple car manufacturing problem and the players involved in the process.
 
 Deployment - 
 
+Smart Contract
+
 1. Remix - Online Ethereum IDE
 2. Truffle 
 3. MyCrypto.com
+
+Backend(Node.js)
+
+-$ npm install
+-$ node app.js
 
 Steps - 
 
