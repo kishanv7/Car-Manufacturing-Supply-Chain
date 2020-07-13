@@ -1,0 +1,440 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_new_owner",
+				"type": "address"
+			}
+		],
+		"name": "changeOwnershipParts",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_new_owner",
+				"type": "address"
+			}
+		],
+		"name": "changeOwnershipProducts",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "countParts",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "countProducts",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNo",
+				"type": "uint256"
+			}
+		],
+		"name": "getPart",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getParts",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNo",
+				"type": "uint256"
+			}
+		],
+		"name": "getProduct",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getProducts",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "parts",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "typeOfParts",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "fac_name",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fac_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "manufacture_date",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "partsAccts",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "products",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "typeOfProducts",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "fac_name",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fac_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "manufacture_date",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "wheels_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "body_parts_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "engines_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "transmissions_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "productsAccts",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_typeOfParts",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_fac_name",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_fac_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_manufacture_date",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "registerParts",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_typeOfProducts",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_fac_name",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_fac_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_manufacture_date",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_wheels_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_body_parts_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_engines_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_transmissions_serialNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "registerProducts",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

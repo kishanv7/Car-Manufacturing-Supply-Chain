@@ -1,0 +1,14 @@
+{
+    "name": "P2P-web-api-8082",
+    "args": [
+      "--env=prod",
+      "--port=7878"
+    ],
+    "script": "app.js",
+    "max_restarts": 50,
+    "max_memory": "1000M",
+    "exec_mode": "fork",
+    "autorestart": true,
+    "env": {
+    }
+  }
